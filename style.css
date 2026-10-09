@@ -1,0 +1,349 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap'); */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif, arial, Verdana;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+}
+
+
+:root {
+    --bg-color: rgb(236, 234, 234);
+}
+
+
+header {
+    padding: 0rem 1rem;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+
+}
+
+.first-half-heading {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: auto;
+}
+
+.first-half-heading .menu {
+    border-radius: 57px 57px;
+    transition: all 0.3s ease;
+}
+
+.first-half-heading .menu:hover {
+    background-color: var(--bg-color);
+    /* padding: 2px; */
+}
+
+.logo {
+    position: relative;
+    height: 40%;
+    width: 6.5rem;
+    margin-top: 0.2rem;
+}
+
+.first-half-heading p {
+    position: relative;
+    top: 0;
+    right: 20px;
+    color: grey;
+    font-size: 0.7rem;
+}
+
+.middle-half-heading {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 19px;
+}
+
+.middle-half-heading {
+    display: none;
+}
+
+.search-bar {
+    height: 90%;
+    min-width: 70%;
+    border-radius: 3rem;
+    border: 2px solid rgba(128, 128, 128, 0.581);
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.search-bar input {
+    min-width: 100%;
+    height: 100%;
+    border-radius: 3rem 0rem 0rem 3rem;
+    border: none;
+    padding: 11.5px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border: 1px solid rgb(45, 45, 216);
+}
+
+.search-bar input::placeholder {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.search-bar .searching-glass1 {
+    height: 100%;
+    width: 60px;
+    background-color: var(--bg-color);
+    border-radius: 0rem 3rem 3rem 0rem;
+    font-size: 1.4rem;
+    padding: 9px;
+    border-left: 1px solid rgba(128, 128, 128, 0.575);
+    position: absolute;
+    right: 0;
+
+}
+
+.second-half-heading {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    gap: 0.6rem;
+}
+
+.searching-glass {
+    font-size: 1.4rem;
+    color: rgb(70, 69, 68);
+}
+
+.second-half-heading .mic {
+    font-size: 1.4rem;
+    display: none;
+}
+
+.second-half-heading .bell {
+    font-size: 1.4rem;
+    display: none;
+    position: relative;
+}
+
+.bell p {
+    font-size: 0.7rem;
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    background-color: rgb(222, 10, 10);
+    border-radius: 50%;
+    color: white;
+    padding: 4px;
+    font-weight: bolder;
+}
+
+
+.second-half-heading span {
+    display: flex;
+    gap: 10px;
+    background-color: var(--bg-color);
+    padding: 0.4rem 0.35rem;
+    border-radius: 1.6rem;
+}
+
+.plus-icon {
+    font-size: 1.34rem;
+}
+
+.second-half-heading span h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.pp {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+
+main {
+    padding: 0rem 1rem;
+    position: relative;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal-nav {
+    display: flex;
+    height: 47px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 55px;
+    z-index: 2;
+    background-color: white;
+    padding: 0px 10px;
+}
+
+.vertical-nav {
+    height: 480px;
+    display: none;
+    position: sticky;
+    top: 65px;
+    padding: 4px;
+    margin-top: 10px;
+    scrollbar-color: black;
+
+}
+
+.vertical-nav ul {
+    display: none;
+}
+
+.vertical-nav a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.vertical-nav i {
+    font-size: 1.2rem;
+
+}
+
+.vertical-nav p {
+    font-size: 0.6rem;
+    text-align: start;
+    font-family: Arial, sans-serif;
+}
+
+.vertical-contents {
+    padding: 10px;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+}
+
+.vertical-contents:hover {
+    background-color: var(--bg-color);
+}
+
+.subscriptions,
+.explore {
+    display: none;
+}
+
+.box {
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.box6,
+.box7,
+.box8,
+.box9,
+.box10,
+.box11,
+.box12,
+.box13 {
+    display: none;
+}
+
+.box:hover {
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+
+
+.main-contents {
+    margin: 1.5rem 1rem 0rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    max-height: 20rem;
+    gap: 1rem;
+    transition: all 0.8s ease;
+    border-radius: 0.7rem;
+    position: relative;
+}
+
+.containers:hover {
+    background-color: #b9b1b1e7;
+    border-radius: 10px;
+}
+
+.containers iframe {
+    height: auto;
+    width: 100%;
+    height: 80%;
+    border-radius: 0.7rem;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+    position: relative;
+    cursor: pointer;
+}
+
+.info .pp {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.texts {
+    width: 80%;
+    margin-left: 15%;
+    font-size: 0.8rem;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+}
